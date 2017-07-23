@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { SharedService } from '../shared/services/shared.service';
 import { CartItem } from '../interfaces/cart-item';
 
@@ -7,12 +7,7 @@ import { CartItem } from '../interfaces/cart-item';
   styleUrls: [ './home.component.scss' ],
   templateUrl: './home.component.html'
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   public shopData: CartItem[] = this.sharedService.getData();
   constructor(private sharedService: SharedService) {}
-
-  public ngOnInit() {
-    // console.log(this.shopData);
-    // console.log(this.route.snapshot.data['team']);
-  }
 }
