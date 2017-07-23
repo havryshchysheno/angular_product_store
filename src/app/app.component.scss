@@ -1,0 +1,37 @@
+.header {
+  background: #000;
+  &__logo {
+    display: block;
+    width: 100px;
+    float: left;
+
+    &-container {
+      width: 250px;
+      float: left;
+      cursor: pointer;
+      outline: none;
+    }
+
+    &-text {
+      color: #fff;
+      font-size: 26px;
+      float: right;
+      width: 140px;
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__button {
+    float: right;
+    margin-top: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    color: #000;
+  }
+}
+
+.footer {
+
+}

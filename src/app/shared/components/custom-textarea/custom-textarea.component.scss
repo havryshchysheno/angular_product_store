@@ -1,0 +1,21 @@
+.custom-textarea {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 85px;
+  min-width: 210px;
+  border: 1px solid darken(#ccc, 15);
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: inherit;
+  padding-left: 10px;
+  background: transparent;
+  resize: none;
+
+  &:focus {
+    border: 1px solid #00838F;
+  }
+
+  &.disable {
+    border: none;
+  }
+}

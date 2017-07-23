@@ -1,0 +1,9 @@
+<div class="confirm" *ngIf="showConfirm">
+    <div class="confirm__text">
+        <ng-content></ng-content>
+    </div>
+    <div class="confirm__control">
+        <custom-button class="confirm__control-ok" (click)="okHandler()">OK</custom-button>
+        <custom-button class="confirm__control-cancel" (click)="cancelHandler()">Cancel</custom-button>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+.content {
+
+  &__image {
+    display: block;
+    width: 100%;
+
+    &-container {
+      position: relative;
+      width: 305px;
+      height: 305px;
+    }
+
+    &-upload {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+  &__title {
+    text-align: center;
+    background: #ccc;
+    padding: 10px 0;
+    margin-bottom: 25px;
+  }
+
+  &__left {
+    float: left;
+    min-width: 305px;
+    min-height: 305px;
+  }
+
+  &__right {
+    float: left;
+    margin-left: 75px;
+  }
+
+  &__button {
+    background: darkslateblue;
+    color: #fff;
+
+    &--delete {
+      background: red;
+    }
+  }
+
+  &__controls {
+    margin-top: 10px;
+  }
+
+  &__message {
+    color: red;
+    margin-top: 10px;
+  }
+}

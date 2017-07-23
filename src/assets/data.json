@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/img/1.jpg",
+    "title": "Good-1",
+    "description": "Some description",
+    "price": 100
+  },
+  {
+    "id": 2,
+    "image": "/assets/img/2.jpg",
+    "title": "Good-2",
+    "description": "Some description",
+    "price": 200
+  },
+  {
+    "id": 3,
+    "image": "/assets/img/3.jpg",
+    "title": "Good-3",
+    "description": "Some description",
+    "price": 300
+  },
+  {
+    "id": 4,
+    "image": "/assets/img/4.jpg",
+    "title": "Good-4",
+    "description": "Some description",
+    "price": 400
+  },
+  {
+    "id": 5,
+    "image": "/assets/img/5.jpg",
+    "title": "Good-5",
+    "description": "Some description",
+    "price": 500
+  },
+  {
+    "id": 6,
+    "image": "/assets/img/6.jpg",
+    "title": "Good-6",
+    "description": "Some description",
+    "price": 600
+  },
+  {
+    "id": 7,
+    "image": "/assets/img/7.jpg",
+    "title": "Good-7",
+    "description": "Some description",
+    "price": 700
+  },
+  {
+    "id": 8,
+    "image": "/assets/img/8.jpg",
+    "title": "Good-8",
+    "description": "Some description",
+    "price": 800
+  }
+]

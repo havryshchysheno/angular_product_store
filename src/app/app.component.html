@@ -1,0 +1,17 @@
+<header class="header">
+    <div class="container">
+        <div class="header__logo-container" [routerLink]=" ['./'] ">
+            <a routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+                <img src="/assets/img/logo.png" alt="" class="header__logo">
+            </a>
+            <span class="header__logo-text">Some company</span>
+        </div>
+        <custom-button [routerLink]=" ['./detail'] "
+           routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}" class="header__button">
+            Add new
+        </custom-button>
+    </div>
+</header>
+<main>
+    <router-outlet></router-outlet>
+</main>

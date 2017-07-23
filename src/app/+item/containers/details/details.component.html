@@ -1,0 +1,37 @@
+<div class="content" [formGroup]="cartForm" novalidate>
+    <h2 class="content__title">
+        <custom-input formControlName="title" [edit]="edit" [placeholder]="'Enter item title'"></custom-input>
+    </h2>
+    <div class="container">
+        <div class="content__left">
+            <div class="content__image-container">
+                <img src={{item.image}} alt="" class="content__image">
+                <div class="content__image-upload" *ngIf="edit">
+                    <upload-file (uploadFile)="uploadHandler($event)">Upload image</upload-file>
+                </div>
+            </div>
+        </div>
+        <div class="content__right">
+            <custom-textarea formControlName="description" [edit]="edit" [placeholder]="'Enter item description'"></custom-textarea>
+            <div class="content__price">
+                <custom-input formControlName="price" [edit]="edit" [placeholder]="'Enter item price'" [type]="'number'"></custom-input>
+            </div>
+            <div class="content__controls">
+                <div class="content__edit" *ngIf="state !== 'new'">
+                    <custom-button class="content__button" (click)="toggleEditState()" *ngIf="!edit">Edit</custom-button>
+                    <custom-button class="content__button" (click)="saveChanges()" [disabled]="!cartForm.valid" *ngIf="edit">Save</custom-button>
+                    <custom-button class="content__button content__button--delete" (click)="showConfirm()">Delete</custom-button>
+                </div>
+                <div class="content__create" *ngIf="state === 'new'">
+                    <custom-button class="content__button" (click)="createNewItem()" [disabled]="!cartForm.valid">Create item</custom-button>
+                </div>
+            </div>
+            <div class="content__message" *ngIf="!cartForm.valid">
+                <p>All inputs is required</p>
+            </div>
+        </div>
+    </div>
+</div>
+<custom-confirm (pressHandler)="removeItem($event)" [showConfirm]="confirm">
+    Are you sure you want to remove from the list "{{item.title}}"?
+</custom-confirm>

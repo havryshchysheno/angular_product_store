@@ -1,0 +1,32 @@
+.upload {
+
+  min-width: 200px;
+  min-height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+  background: #ccc;
+
+  &__input {
+    position: absolute;
+    border: none;
+    background: transparent;
+    opacity: 0;
+  }
+
+  &__label {
+    display: block;
+    padding: 15px 0;
+    font-size: 24px;
+    user-select: none;
+  }
+
+  &__message {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    right: 0;
+    font-size: 14px;
+    color: red;
+  }
+}

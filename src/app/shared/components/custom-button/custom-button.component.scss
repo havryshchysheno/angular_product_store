@@ -1,0 +1,13 @@
+.button {
+  height: 45px;
+  width: 180px;
+  border: none;
+  color: inherit;
+  text-transform: uppercase;
+  background: inherit;
+  outline: none;
+
+  &.disabled {
+    cursor: not-allowed;
+  }
+}

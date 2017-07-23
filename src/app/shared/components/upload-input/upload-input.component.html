@@ -1,0 +1,9 @@
+<div class="upload">
+    <label for="upload" class="upload__label">
+        <ng-content></ng-content>
+    </label>
+    <div class="upload__message" *ngIf="!valid">
+        Invalid file type
+    </div>
+    <input type="file" id="upload" class="upload__input" (change)="changeHandler($event)">
+</div>
